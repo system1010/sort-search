@@ -24,11 +24,11 @@
  int main(void)
  {
    char s[255];
-
+  
    printf("input string:");
    gets(s);
    bubble(s, strlen(s));
    printf("sorted string: %s.\n", s);
-
+  
    return 0;
  }
