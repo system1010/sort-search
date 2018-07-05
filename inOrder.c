@@ -73,22 +73,6 @@ while(1){
 		
 		}else break;
 
-		/*
-               		printf("%c\n", P->data);
-	        	if (P->right!=NULL)printf("%c\n", P->right->data);
-			if(stack->top==-1)break;
-                	P=pop(stack);
-                	while(P->left!=NULL){
-				printf("%c\n", P->data);
-				if(stack->top==-1)break;
-				P=pop(stack);
-				x=1;
-			}       
-			if (x=1){
-				P=P->right;
-				x=-1;
-			}
-		*/
 	}
 }       
 
