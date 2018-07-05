@@ -68,9 +68,6 @@ while(1){
 		P=pop(stack);
 		printf("%c\n", P->data);
 		P=P->right;
-		
-		
-		
 		}else break;
 
 	}
