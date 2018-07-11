@@ -44,8 +44,7 @@ struct Node* P=newNode('P');;
 
 //T1
 P=root;
-//push (stack, P);
-//int x=-1;
+//push (stack, P);//dfs
 while(1){
 	if(P!=NULL){//T2
 		push(stack,P);			//	--
