@@ -7,8 +7,6 @@ e={u,v}.
 ----------------------------
 if i<j&ai>aj => inv(ai,aj)
 
-geeksforgeeks
-avtomati dla programmistov
 
 programm tree traversal orders polish notation:
 argumintation: induction node count
