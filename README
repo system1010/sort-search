@@ -1,0 +1,35 @@
+G:=(V,E).
+e={u,v}.
+
+
+1) a<b||a=b||a>b trihotom
+2) if(a<b&b<c)a<c tranzistiv
+----------------------------
+if i<j&ai>aj => inv(ai,aj)
+
+geeksforgeeks
+avtomati dla programmistov
+
+programm tree traversal orders polish notation:
+argumintation: induction node count
+
+
+conclusion:inorder=DFS
+
+
+T similar T`:n=n`    l(uj)=l(uj`), r(uj)=r(uj`) for 1<=j<=n
+equal: info(uj)=info(uj`)
+
+T1:P<---T
+   \
+    \
+  T2:if P=NULL T4 else T3
+   /	/  \        \
+  /  no/    \yes     \
+T3:A<-P	     T4:P<-A  \
+P<-LLINK(P)   /\       \
+       A=NULL/	\	\
+	   end	T5:visit(P)
+		P<-RLINK(P)
+
+
