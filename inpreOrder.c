@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-
+#include <time.h>
 struct Node 
 {
 	char data;
@@ -24,10 +24,12 @@ struct Stack* createStack(unsigned capacity);
 void push(struct Stack* stack, struct Node* item);
 struct Node* pop(struct Stack* stack);
 void visit(struct Node* current );
-
+clock_t t,t1,t2;
 int main()
 {
-
+t=clock(); 
+printf("%f", ((double)t)/CLOCKS_PER_SEC);
+printf("\n");
 struct Node* root=newNode('A');
 root->left=newNode('B');
 root->right=newNode('C');
@@ -79,7 +81,7 @@ P=pop(stack);
 visit(P);
 if (P->left!=NULL)push(stack, P->left);
 if (P->right!=NULL)push(stack, P->right);
-}    
+}
 
 return 0;
 }
@@ -99,7 +101,9 @@ struct Node* pop(struct Stack* stack)
 }
 
 void visit(struct Node* current ) {
-        printf("%c ", current->data);
+	t1=clock(); 
+	printf("%f ", ((double)t1)/CLOCKS_PER_SEC);
+        printf("%c\n ", current->data);
 }
 
 
