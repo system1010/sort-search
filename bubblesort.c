@@ -17,19 +17,15 @@ for (i = 0; i < n-1; i++){
 	for (j = 0; j < n-i-1; j++) 
 		if (arr[j] > arr[j+1]){ 
 		
-		       t1=clock(); 
-	               printf("%f i=%i j=%i %i - %i > 0 ", ((double)t1)/CLOCKS_PER_SEC,i,j ,arr[j], arr[j+1]);
-			printf("inversion, moving up: ");
-									 
-		
-			move(&arr[j], &arr[j+1]); 
-		printArray(arr,n);
-	       printf("\n");	
-		}else {
-		
-		
-		 t2=clock(); 
-	        printf("%f i-%i j=%i %i - %i < 0 ", ((double)t2)/CLOCKS_PER_SEC,i,j, arr[j], arr[j+1]);
+        t1=clock(); 
+        printf("%f i=%i j=%i %i - %i > 0 ", ((double)t1)/CLOCKS_PER_SEC,i,j ,arr[j], arr[j+1]);
+	printf("inversion, moving up: ");
+	move(&arr[j], &arr[j+1]); 
+	printArray(arr,n);
+	printf("\n");	
+	}else {
+	t2=clock(); 
+	printf("%f i-%i j=%i %i - %i < 0 ", ((double)t2)/CLOCKS_PER_SEC,i,j, arr[j], arr[j+1]);
 
 	printf("not inversion :");	
 	printArray(arr,n);
