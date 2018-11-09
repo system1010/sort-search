@@ -27,7 +27,7 @@ for (i = 0; i < n-1; i++){
 	t2=clock(); 
 	printf("%f i-%i j=%i %i - %i < 0 ", ((double)t2)/CLOCKS_PER_SEC,i,j, arr[j], arr[j+1]);
 
-	printf("not inversion :");	
+	printf("not inversion :       ");	
 	printArray(arr,n);
 	printf("\n");
 		}
