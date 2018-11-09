@@ -15,28 +15,24 @@ int main(){
 	      
 	for(i = n-1;i>=1; --i) 
 	        for (j=i-1;j>=0;--j){
+			t3=clock()-t; 
 			if (signum(arr[i], arr[j])==1)
 			{
-				++count[i];
+			++count[i];
+			printf("%f %i - %i > 0", ((double)t3)/CLOCKS_PER_SEC, arr[i],arr[j]);
+			for (int k = 0; k < n; ++k)
+			printf(" %i",count[k]); 
+			printf("  inversion, counting\n");
+
 			}else{
-				++count[j];
+			++count[j];
+			printf("%f %i - %i < 0", ((double)t3)/CLOCKS_PER_SEC, arr[i],arr[j]);
+			for (int k = 0; k < n; ++k)
+			printf(" %i",count[k]);
+			printf("  not inversion\n");
+
 			}
-
-
-
-	t3=clock()-t; 
-	if ((arr[i]-arr[j])>0){
-	printf("%f %i - %i > 0", ((double)t3)/CLOCKS_PER_SEC, arr[i],arr[j]);
-	for (int k = 0; k < n; ++k)
-	printf(" %i",count[k]); 
-	printf("  inversion, counting\n");
-	}else{
-	printf("%f %i - %i < 0", ((double)t3)/CLOCKS_PER_SEC, arr[i],arr[j]);
-	for (int k = 0; k < n; ++k)
-	printf(" %i",count[k]);
-	printf("  not inversion\n");
-	}
-	}
+			}
 	for (i = 0; i < n; ++i)
 	output[count[i]] = arr[i]; 
 	
