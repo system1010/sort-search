@@ -22,7 +22,7 @@ int main(){
 			printf("%f %i - %i > 0", ((double)t3)/CLOCKS_PER_SEC, arr[i],arr[j]);
 			for (int k = 0; k < n; ++k)
 			printf(" %i",count[k]); 
-			printf("  inversion, counting\n");
+			printf("  inversion\n");
 
 			}else{
 			++count[j];
@@ -40,7 +40,7 @@ int main(){
 		printf("%i ", output[i]);
         printf("\n");
 	t2=clock()-t; 
-	printf("sec: %f", ((double)t2)/CLOCKS_PER_SEC);
+	printf("sec: %f ", ((double)t2)/CLOCKS_PER_SEC);
 	printf("end\n");
 	return 0; 
 } 
