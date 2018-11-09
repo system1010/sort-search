@@ -12,3 +12,6 @@ https://ideone.com/
 c
 
 copy paste run
+
+(x > 0) ? 1 : ((x < 0) ? -1 : 0)
+

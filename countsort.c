@@ -1,6 +1,9 @@
 #include <stdio.h> 
 #include <time.h>
 #include <stdlib.h>
+int signum(int a, int b){
+return (a-b > 0) ? 1 : ((a-b < 0) ? -1 : 0);
+}
 int main(){ 
 	int arr[] = {170, 45, 75, 90, 802, 24, 2, 66, 46, 51, 765, 665, 33, 7, 39};
 
@@ -12,7 +15,13 @@ int main(){
 	      
 	for(i = n-1;i>=1; --i) 
 	        for (j=i-1;j>=0;--j){
-		        ++count[(arr[i] - arr[j]) > 0 ? i : j];
+			if (signum(arr[i], arr[j])==1)
+			{
+				++count[i];
+			}else{
+				++count[j];
+			}
+
 
 
 	t3=clock()-t; 
