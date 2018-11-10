@@ -22,13 +22,13 @@ int main(){
 	printf("%f i=%i j=%i %i > %i", ((double)t3)/CLOCKS_PER_SEC,i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
 	printf(" %i",count[k]); 
-	printf("  inversion\n");
+	printf("  inversion count i\n");
 	}else{
 	++count[j];
 	printf("%f i=%i j=%i %i < %i", ((double)t3)/CLOCKS_PER_SEC,i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
 	printf(" %i",count[k]);
-	printf("  not inversion\n");
+	printf("  not inversion count j\n");
 	}
 	}
 	for (i = 0; i < n; ++i)
