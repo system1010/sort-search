@@ -19,13 +19,13 @@ int main(){
 	if (signum(arr[i], arr[j])==1)
 	{
 	++count[i];
-	printf("%f %i - %i > 0", ((double)t3)/CLOCKS_PER_SEC, arr[i],arr[j]);
+	printf("%f i=%i j=%i %i > %i", ((double)t3)/CLOCKS_PER_SEC,i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
 	printf(" %i",count[k]); 
 	printf("  inversion\n");
 	}else{
 	++count[j];
-	printf("%f %i - %i < 0", ((double)t3)/CLOCKS_PER_SEC, arr[i],arr[j]);
+	printf("%f i=%i j=%i %i < %i <", ((double)t3)/CLOCKS_PER_SEC,i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
 	printf(" %i",count[k]);
 	printf("  not inversion\n");
