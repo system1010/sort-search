@@ -1,12 +1,4 @@
 #include <stdio.h> 
-#include <time.h>
-clock_t t1,t2,t3;
-void printArray(int arr[], int size) 
-{ 
-	for (int i=0; i < size; i++) 
-		printf("%d ", arr[i]); 
-	printf("n"); 
-} 
 int main() 
 { 
 	int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
@@ -22,8 +14,11 @@ B3:;	if (arr[j] > arr[j+1]){
    	t=j;
    	}
    	}
-B4:;	printf("%i",t);
-   	if (t==0) {printArray(arr,n);return 0;}
+B4:;   	if (t==0) {
+	for (int i=0; i < n; i++) 
+		printf("%d ", arr[i]); 
+	printf("\n"); 
+	return 0;}
    	bound=t+1;
 	goto B2;
 }	
