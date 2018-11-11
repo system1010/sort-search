@@ -48,8 +48,8 @@ B3:;	if (arr[j] > arr[j+1]){
 	arr[j] = arr[j+1]; 
 	arr[j+1] = temp;	
    	t=j;
-
-resol = res.tv_sec * NANO + res.tv_nsec;
+clock_gettime(clk_id, &ts);
+timespec2str(timestr, sizeof(timestr), &ts);
 
 	printf("%s ",timestr);
 	 for (int i=0; i < n; i++) 
