@@ -7,5 +7,5 @@ II) if a<b & b<c {a<c} transitivity
 
 if i<j & ai>aj => inv(ai,aj)
 
-https://ideone.com/Fwgzt6 bubblesort
+https://ideone.com/zXypaP bubblesort
 
