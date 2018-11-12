@@ -51,7 +51,7 @@ int main(){
     clock_gettime(clk_id, &ts);
             timespec2str(timestr, sizeof(timestr), &ts);
 		                    unsigned long resol = res.tv_sec * NANO + res.tv_nsec;
-	                    printf("%s\n", timestr);
+	                    printf("%s ", timestr);
 
 	printf("i=%i j=%i %i > %i",i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
@@ -62,7 +62,7 @@ int main(){
 	    clock_gettime(clk_id, &ts);
 	            timespec2str(timestr, sizeof(timestr), &ts);
 			                    unsigned long resol = res.tv_sec * NANO + res.tv_nsec;
-		                    printf("%s\n", timestr);
+		                    printf("%s ", timestr);
 	printf("i=%i j=%i %i < %i",i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
 	printf(" %i",count[k]);
