@@ -44,10 +44,10 @@ B3:;	if (arr[j] > arr[j+1]){
    	t=j;
 	
 	                  t1 = clock();
-								                        printf ("[%f]",((double)t1)/CLOCKS_PER_SEC);
+								                        printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
 
 	
-	printf("j=%i %i > %i ", j, arr[j], arr[j+1]);
+	printf("j=%i [%i-%i>0] ", j, arr[j], arr[j+1]);
 	for (int i=0; i < n; i++) 
 		printf("%d ", arr[i]); 
 	printf("\n"); 
