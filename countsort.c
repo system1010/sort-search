@@ -16,19 +16,16 @@ int main(){
 	if (signum(arr[i], arr[j])==1)
 	{
 	++count[i];
-
-	                  t1 = clock();
-			                                                                                          printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
-
+	t1 = clock();
+	printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
 	printf("i=%i j=%i %i > %i",i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
 	printf(" %i",count[k]); 
 	printf("  inversion count i\n");
 	}else{
 	++count[j];
-	                  t1 = clock();
-			                                                                                          printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
-
+	t1 = clock();
+	printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
 	printf("i=%i j=%i %i < %i",i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
 	printf(" %i",count[k]);
