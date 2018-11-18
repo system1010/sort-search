@@ -18,7 +18,7 @@ B1:;	int bound = n, t;
    	
 B2:;	t=0;
    	for (int j = 0; j < bound-1; j++){	   
-B3:;	if (arr[j] > arr[j+1]){ 
+B3:;	if (signum(arr[j], arr[j+1])==1){ 
 	int temp = arr[j];
 	arr[j] = arr[j+1]; 
 	arr[j+1] = temp;	

@@ -18,7 +18,7 @@ int main(){
 	++count[i];
 	t1 = clock();
 	printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
-	printf("i=%i j=%i %i > %i",i,j, arr[i],arr[j]);
+	printf("i=%i j=%i [%i > %i]",i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
 	printf(" %i",count[k]); 
 	printf("  inversion count i\n");
@@ -26,7 +26,7 @@ int main(){
 	++count[j];
 	t1 = clock();
 	printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
-	printf("i=%i j=%i %i < %i",i,j, arr[i],arr[j]);
+	printf("i=%i j=%i [%i < %i]",i,j, arr[i],arr[j]);
 	for (int k = 0; k < n; ++k)
 	printf(" %i",count[k]);
 	printf("  not inversion count j\n");
