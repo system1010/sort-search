@@ -2,9 +2,12 @@
 #include <stdlib.h>
 #include <time.h>
 <<<<<<< HEAD
+<<<<<<< HEAD
 int signum(int a, int b){
 	return (a-b > 0) ? 1 : ((a-b < 0) ? -1 : 0);
 }
+=======
+>>>>>>> release
 =======
 >>>>>>> release
 int main() 
