@@ -1,9 +1,6 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include <time.h>
-int signum(int a, int b){
-	return (a-b > 0) ? 1 : ((a-b < 0) ? -1 : 0);
-}
 int main() 
 { 
 	int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
