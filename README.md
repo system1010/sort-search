@@ -9,5 +9,4 @@ if i<j & ai>aj => inv(ai,aj)
 
 inv = bubble
 
-
-://system1010.github.io/
+https://system1010.github.io/
