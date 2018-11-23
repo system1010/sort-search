@@ -9,11 +9,11 @@ int main(){
 	int arr[] = {170, 45, 75, 90, 802, 24, 2, 66, 46, 51, 765, 665, 33, 7, 39};
   	int n = sizeof(arr)/sizeof(arr[0]);
 	int output[n]; 
-        int count[sizeof(arr)/sizeof(arr[0])]={0}, i, j; 
+C1:;    int count[sizeof(arr)/sizeof(arr[0])]={0}, i, j; 
 	clock_t t1;
-	for(i = n-1;i>=1; --i) 
-	for (j=i-1;j>=0;--j){
-	if (signum(arr[i], arr[j])==1)
+C2:;	for(i = n-1;i>=1; --i) 
+C3:;	for (j=i-1;j>=0;--j){
+C4:;	if (signum(arr[i], arr[j])==1)
 	{
 	++count[i];
 	t1 = clock();
