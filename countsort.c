@@ -11,10 +11,10 @@ int main(){
 	int output[n]; 
 C1:;    int count[sizeof(arr)/sizeof(arr[0])]={0}, i, j; 
 	clock_t t1;
-C2:;	for(i = n-1;i>=1; --i) 
-C3:;	for (j=i-1;j>=0;--j){
-C4:;	if (signum(arr[i], arr[j])==1)
-	{
+C2:;	for(i = n-1;i>=1; --i)
+   	for (j=i-1;j>=0;--j){
+   	if (signum(arr[i], arr[j])==1)
+   	{
 	++count[i];
 	t1 = clock();
 	printf ("%f ",((double)t1)/CLOCKS_PER_SEC);
@@ -35,8 +35,8 @@ C4:;	if (signum(arr[i], arr[j])==1)
 	for (i = 0; i < n; ++i)
 	output[count[i]] = arr[i]; 
 	
-	for (i=0;i<n;++i)
-		printf("%i ", output[i]);
-        printf("\n");
+	//for (i=0;i<n;++i)
+	//	printf("%i ", output[i]);
+        //printf("\n");
 	return 0; 
 } 
