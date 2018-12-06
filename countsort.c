@@ -2,9 +2,6 @@
 #include <stdlib.h>
 #include <time.h>
 
-int signum(int a, int b){
-return (a-b > 0) ? 1 : ((a-b < 0) ? -1 : 0);
-}
 int main(){ 
 	int arr[] = {170, 45, 75, 90, 802, 24, 2, 66, 46, 51, 765, 665, 33, 7, 39};
   	int n = sizeof(arr)/sizeof(arr[0]);
@@ -13,7 +10,7 @@ C1:;    int count[sizeof(arr)/sizeof(arr[0])]={0}, i, j;
 	clock_t t1;
 C2:;	for(i = n-1;i>=1; --i)
    	for (j=i-1;j>=0;--j){
-   	if (signum(arr[i], arr[j])==1)
+   	if (arr[i]-arr[j]>0)
    	{
 	++count[i];
 	t1 = clock();

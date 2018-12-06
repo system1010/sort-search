@@ -1,9 +1,6 @@
 #include <stdio.h> 
 #include <stdlib.h>
 #include <time.h>
-int signum(int a, int b){
-	return (a-b > 0) ? 1 : ((a-b < 0) ? -1 : 0);
-}
 int main() 
 { 
 	int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
@@ -18,7 +15,7 @@ B1:;	int bound = n, t;
    	
 B2:;	t=0;
    	for (int j = 0; j < bound-1; j++){	   
-B3:;	if (signum(arr[j], arr[j+1])==1){ 
+B3:;	if (arr[j]- arr[j+1]>0){ 
 	int temp = arr[j];
 	arr[j] = arr[j+1]; 
 	arr[j+1] = temp;	
