@@ -3,9 +3,9 @@
 #include <time.h>
 int main() 
 { 
-	int arr[] = {64, 34, 25, 12, 22, 11, 90}; 
+	int arr[] = {6, 5, 4, 2, 3, 1, 7}; 
 	int n = sizeof(arr)/sizeof(arr[0]); 
-        clock_t t1;
+	clock_t t1;
 
 	for (int i=0; i < n; i++) 
 		printf("%d ", arr[i]); 
@@ -34,6 +34,15 @@ B4:;   	if (t==0) {
 	printf("\n"); 
 	return 0;}
    	bound=t+1;
+	int T[8]={0};
+	for (int i = 0; i<=n;i++)
+		for (int j = 0;j<=i - 1;j++)
+			if (arr[j] > arr[i]) T[arr[i]-1]++;
+
+	for (int i=0; i <= n; i++) 
+	                printf("%d ", T[i]); 
+        printf("\n"); 
+
 	goto B2;
 }	
 
