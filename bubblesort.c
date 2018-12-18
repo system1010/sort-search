@@ -13,7 +13,8 @@ int main()
 
 B1:;	int bound = n, t;
    	
-B2:;	t=0;
+B2:;	for(;;){
+   	t=0;
    	for (int j = 0; j < bound-1; j++){	   
 B3:;	if (arr[j]- arr[j+1]>0){ 
 	int temp = arr[j];
@@ -43,7 +44,6 @@ B4:;   	if (t==0) {
 	for (int i=0; i < n; i++) 
 	                printf("%d ", T[i]); 
         printf("\n"); 
-
-	goto B2;
+	};
 }	
 
