@@ -11,7 +11,8 @@ int main()
 		printf("%d ", arr[i]); 
 	printf("\n"); 
    	l=n;
-S1:;   	l--;
+S1:;   	for(;;){
+   	l--;
    	for (j = l; j>=0 ; j--){	   
 S2:;	if (Ki<arr[j]){Ki=arr[j];i=j;}
 	t1 = clock();
@@ -26,7 +27,7 @@ S3:;	if (Ki==0) goto S4;
         arr[l] = Ki; 
         arr[i] = temp;
 	Ki=0;
-	goto S1;
+   	}
 S4:;
 	for (int i=0; i < n; i++) 
 		printf("%d ", arr[i]); 
