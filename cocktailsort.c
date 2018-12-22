@@ -7,10 +7,8 @@ int main()
 	int n = sizeof(arr)/sizeof(arr[0]); 
         int i, j, gatilho, k;
 	clock_t t1;
-	//do {
         for(i = 0; i < n/2; i++)
         {
-        //gatilho = 0;
         for(j = i; j < n-i-1; j++)
         {
         if(arr[j] >arr[j+1])
@@ -26,7 +24,6 @@ int main()
 	printf("\n"); 
 
 	
-	//gatilho = 1;
         }
         }
 	for(k = n-2-i; k > i; k--)
@@ -43,7 +40,6 @@ int main()
                      printf("%d ", arr[l]); 
         printf("\n"); 
 
-	//gatilho = 1;
 	}
 	}
 
@@ -58,7 +54,6 @@ int main()
 
 
         }
-	//} while(gatilho == 1);
 	for (int i=0; i < n; i++) 
         printf("%d ", arr[i]); 
         printf("\n"); 
