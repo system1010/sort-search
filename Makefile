@@ -3,5 +3,3 @@ all:
 	gcc countsort.c -o count
 	gcc selectsort.c -o select
 	gcc cocktailsort.c -o cocktail
-clean:
-	rm count bubble select cocktail
